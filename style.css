@@ -1,0 +1,152 @@
+* {box-sizing: border-box; margin: 0; padding: 0; font-family: Calibri;}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+header {
+  display: flex;
+  flex-direction: column;  
+  align-items: center; 
+  padding: 30px 0px; 
+}
+
+header > img {
+  width: 345px;  
+  padding-bottom: 30px;
+}
+
+header nav > ul {
+  display: flex; 
+  align-items: center;
+}
+
+nav > ul > li { 
+list-style-type: none;
+text-align: center;
+width: 100px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 20px; 
+  color: black; 
+}
+
+nav > ul > li > a:hover {
+ color: rgb(11,163,156);
+} 
+
+.sectionFooter {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  background-color: #252525; 
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin-top: 20px;
+}
+
+#ft {
+  color: white;
+}
+
+#icon {
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: normal;
+line-height: 1;
+padding: 0;
+overflow: visible;
+display: inline;
+}
+
+  #icon ul li a {
+  background: url(./img/icons.jpg) no-repeat;
+  display: block;
+  height: 44px;
+  margin: 0;
+  padding: 0;  
+  width: 44px;  
+}
+
+#icon ul li {
+  display: block;
+  float: left;
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+  width: 44px;
+  background-color: yellow;
+}
+
+ #icon ul li #twitter:hover {
+  background-position: -44px 0;
+}
+
+#icon ul li #facebook {
+  background-position: 0 -44px;
+}
+
+#icon ul li #facebook:hover {
+  background-position: -44px -44px;
+}
+
+#icon ul li #googleplus {
+  background-position: 0 -88px;
+}
+
+#icon ul li #googleplus:hover {
+  background-position: -44px -88px;
+}
+
+#icon  ul li #pinterest {
+  background-position: 0 -132px;
+}
+
+#icon ul li #pinterest:hover {
+  background-position: -44px -132px;
+}
+
+.headerTxt {  
+  display: flex;
+  padding: 5px 30px;  
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;  
+  align-items: center;
+  justify-content: center;   
+  font-size: 30px;
+  height: 60px;
+  font-weight: 900;
+  letter-spacing: 8px;  
+  font-family: "Berlin Sans FB Demi Bold";
+}
+
+
+/* > 1500 ***************************************************/
+@media (min-width: 1500px) {
+  header nav > ul {    
+    flex-direction: row;
+  }
+}
+ 
+  
+/* < 1501 **************************************************/
+@media (max-width: 1501px) {
+  header nav > ul {    
+    flex-direction: column;
+  }
+
+  .headerTxt {
+    font-size: 100%;
+  }
+}
+    
+    

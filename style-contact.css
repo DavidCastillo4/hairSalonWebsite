@@ -1,0 +1,53 @@
+
+.sectionContact {
+  max-width: 620px;
+  width: 100%;  
+}
+
+.sectionContact div {
+display: flex;
+flex-direction: column;
+margin: 0px 20px;
+align-items: center;
+}
+
+.sectionContact input {
+height: 50px;
+margin-bottom: 15px;
+border: 2px solid black;
+width: 100%;
+}
+
+.sectionContact div > a {  
+  padding: 5px 20px;  
+  vertical-align: middle;
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-family: "Arial";
+  font-size: 19px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.sectionContact input:nth-last-child(1) {
+  height: 200px;
+  margin-bottom: 0px;
+}
+
+input[type="email"]::placeholder {  
+  text-align: center; 
+} 
+
+input[type="text"]::placeholder {  
+  text-align: center; 
+} 
+
+input[type="tel"]::placeholder {  
+  text-align: center; 
+} 
+
+ 
+
+ 

@@ -1,0 +1,50 @@
+.aboutLogo {
+  width: 100%;  
+  margin-bottom: 30px;
+  border: 2px solid black;
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionContent h3 {
+  text-align: center;  
+  padding-bottom: 20px;  
+}
+
+.sectionContent p {
+  text-align: center;  
+  max-width: 580px;
+  font-family: Arial;
+  padding: 0px 10px 20px 10px;
+  font-size: 14px;  
+  transform: scaleY(1.2);  
+}
+
+.sectionContent p:nth-last-of-type(1) {  
+  padding-bottom: 0px;
+}
+
+
+
+
+
+/* > 1500 ***************************************************/
+@media (min-width: 1500px) {
+
+}
+
+    
+  
+/* < 1501 */
+@media (max-width: 1501px) {
+
+
+}
+    
+
+
+

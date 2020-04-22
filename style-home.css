@@ -1,0 +1,94 @@
+
+.sectionMiddle {
+  position: relative;
+  width: 100%;  
+  display: flex;
+  justify-content: flex-end;
+  align-items:center;
+}
+
+.sectionMiddle img {    
+  width: 100%;  
+  margin-bottom: 20px;
+}
+
+.imageTxt {
+  position: absolute;
+  padding-right: 25px;  
+}
+
+[tx1] {
+  background-color: white;
+  color:black;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+[tx2] {
+  color: white;
+  background-color: black;
+  font-size: 25px;
+  line-height: 25px;
+  opacity: .75;
+  margin-top: 15px;
+}
+
+#rm {
+  height: 60px;
+  width: 150px;
+  background-color: rgb(11,163,156);
+  border-style: none;
+  margin-top: 15px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sectionBottom {
+  display: flex;  
+  justify-content: center;
+  align-items: center;  
+}
+
+.sectionBottom img {
+  margin: 10px;
+}
+
+.sectionBottom div p {
+  width: 296px;  
+  text-align: center;
+  margin:  10px 10px 0px 10px;
+  font-size: 25px;
+  font-weight: 900;     
+}
+
+/* > 1500 ***************************************************/
+@media (min-width: 1500px) {
+  .sectionBottom {
+    flex-direction: row;
+  }
+
+}
+
+
+    
+  
+/* < 1501 ****************************************************/
+@media (max-width: 1501px) {
+
+  .sectionMiddle img {    
+    object-fit: cover;  
+    object-position: 0%;    
+    height: 350px;
+  }
+
+  [tx1], [tx2] {
+    font-size: 130%;
+  }
+
+  .sectionBottom {
+    flex-direction: column;
+  }
+
+}
+    
